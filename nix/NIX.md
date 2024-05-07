@@ -5,22 +5,22 @@ To import with flakes use
 ```nix
 {
   inputs = {
-    polymc.url = "github:PolyMC/PolyMC";
+    enderforgemc.url = "github:Abhinav2011VS/EnderForgeMC";
   };
 
 ...
 
-  nixpkgs.overlays = [ inputs.polymc.overlay ]; ## Within configuration.nix
-  environment.systemPackages = with pkgs; [ polymc ]; ##
+  nixpkgs.overlays = [ inputs.enderforgemc.overlay ]; ## Within configuration.nix
+  environment.systemPackages = with pkgs; [ enderforgemc ]; ##
 }
 ```
 
 To import without flakes use channels:
 
 ```sh
-nix-channel --add https://github.com/PolyMC/PolyMC/archive/master.tar.gz polymc
-nix-channel --update polymc
-nix-env -iA polymc
+nix-channel --add https://github.com/Abhinav2011VS/EnderForgeMC/archive/master.tar.gz enderforgemc
+nix-channel --update enderforgemc
+nix-env -iA enderforgemc
 ```
 
 or alternatively you can use
@@ -28,9 +28,9 @@ or alternatively you can use
 ```nix
 {
   nixpkgs.overlays = [
-    (import (builtins.fetchTarball "https://github.com/PolyMC/PolyMC/archive/develop.tar.gz")).overlay
+    (import (builtins.fetchTarball "https://github.com/Abhinav2011VS/EnderForgeMC/archive/develop.tar.gz")).overlay
   ];
 
-  environment.systemPackages = with pkgs; [ polymc ];
+  environment.systemPackages = with pkgs; [ enderforgemc ];
 }
 ```

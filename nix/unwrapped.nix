@@ -21,7 +21,7 @@
 }:
 
 stdenv.mkDerivation {
-  pname = "polymc-unwrapped";
+  pname = "enderforgemc-unwrapped";
   inherit version;
 
   src = lib.cleanSource self;
@@ -52,9 +52,9 @@ stdenv.mkDerivation {
   ++ lib.optionals (msaClientID != "") [ "-DLauncher_MSA_CLIENT_ID=${msaClientID}" ];
 
   meta = with lib; {
-    homepage = "https://polymc.org/";
-    downloadPage = "https://polymc.org/download/";
-    changelog = "https://github.com/PolyMC/PolyMC/releases";
+    homepage = "https://enderforgemc.pages.dev/";
+    downloadPage = "https://enderforgemc.pages.dev/download/";
+    changelog = "https://github.com/Abhinav2011VS/EnderForgeMC/releases";
     description = "A free, open source launcher for Minecraft";
     longDescription = ''
       Allows you to have multiple, separate instances of Minecraft (each with

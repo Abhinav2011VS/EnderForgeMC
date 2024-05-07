@@ -2,7 +2,7 @@
 , lib
 , symlinkJoin
 , addOpenGLRunpath
-, polymc-unwrapped
+, enderforgemc-unwrapped
 , wrapQtAppsHook
 , jdk8
 , jdk17
@@ -22,14 +22,14 @@
 }:
 
 let
-  polymcInner = polymc-unwrapped.override { inherit msaClientID enableLTO; };
+  enderforgemcInner = enderforgemc-unwrapped.override { inherit msaClientID enableLTO; };
 in
 
 symlinkJoin {
-  name = "polymc";
+  name = "enderforgemc";
   inherit version;
 
-  paths = [ polymcInner ];
+  paths = [ enderforgemcInner ];
 
   nativeBuildInputs = [ wrapQtAppsHook ];
   buildInputs = [ qtbase ];
@@ -58,9 +58,9 @@ symlinkJoin {
       ];
     in
     [
-      "--prefix POLYMC_JAVA_PATHS : ${lib.makeSearchPath "bin/java" jdks}"
+      "--prefix ENDERFORGEMC_JAVA_PATHS : ${lib.makeSearchPath "bin/java" jdks}"
       "--set LD_LIBRARY_PATH ${addOpenGLRunpath.driverLink}/lib:${lib.makeLibraryPath runtimeLibs}"
     ];
 
-    inherit (polymcInner) meta;
+    inherit (enderforgemcInner) meta;
 }
