@@ -1,33 +1,33 @@
-polymc(6)
+enderforgemc(6)
 
 
 # NAME
 
-polymc - a launcher and instance manager for Minecraft.
+enderforgemc - a launcher and instance manager for Minecraft.
 
 
 # SYNOPSIS
 
-*polymc* [OPTIONS...]
+*enderforgemc* [OPTIONS...]
 
 
 # DESCRIPTION
 
-PolyMC is a custom launcher for Minecraft that allows you to easily manage
+Ender Forge MC is a custom launcher for Minecraft that allows you to easily manage
 multiple installations of Minecraft at once. It also allows you to easily
 install and remove mods by simply dragging and dropping.
-Here are the current features of PolyMC.
+Here are the current features of Ender Forge MC.
 
 # OPTIONS
 
 *-d, --dir*=DIRECTORY
-	Use DIRECTORY as the PolyMC root.
+	Use DIRECTORY as the Ender Forge MC root.
 
 *-l, --launch*=INSTANCE_ID
 	Launch the instance specified by INSTANCE_ID.
 
 *--alive*
-	Write a small 'live.check' file after PolyMC starts.
+	Write a small 'live.check' file after Ender Forge MC starts.
 
 *-h, --help*
 	Display help text and exit.
@@ -48,14 +48,14 @@ Here are the current features of PolyMC.
 
 # BUGS
 
-https://github.com/PolyMC/PolyMC/issues
+https://github.com/Abhinav2011VS/EnderForgeMC/issues
 
 # RESOURCES
 
-GitHub: https://github.com/PolyMC/PolyMC
+GitHub: https://github.com/Abhinav2011VS/EnderForgeMC
 
-Main website: https://polymc.org
+Main website: https://enderforgemc.pages.dev
 
 # AUTHORS
 
-PolyMC Contributors
+Abhinav VS

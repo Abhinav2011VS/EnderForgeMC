@@ -2,38 +2,38 @@
 
 # ICO
 
-inkscape -w 16 -h 16 -o polymc_16.png org.polymc.PolyMC.svg
-inkscape -w 24 -h 24 -o polymc_24.png org.polymc.PolyMC.svg
-inkscape -w 32 -h 32 -o polymc_32.png org.polymc.PolyMC.svg
-inkscape -w 48 -h 48 -o polymc_48.png org.polymc.PolyMC.svg
-inkscape -w 64 -h 64 -o polymc_64.png org.polymc.PolyMC.svg
-inkscape -w 128 -h 128 -o polymc_128.png org.polymc.PolyMC.svg
+inkscape -w 16 -h 16 -o enderforgemc_16.png org.enderforgemc.EnderForgeMC.svg
+inkscape -w 24 -h 24 -o enderforgemc_24.png org.enderforgemc.EnderForgeMC.svg
+inkscape -w 32 -h 32 -o enderforgemc_32.png org.enderforgemc.EnderForgeMC.svg
+inkscape -w 48 -h 48 -o enderforgemc_48.png org.enderforgemc.EnderForgeMC.svg
+inkscape -w 64 -h 64 -o enderforgemc_64.png org.enderforgemc.EnderForgeMC.svg
+inkscape -w 128 -h 128 -o enderforgemc_128.png org.enderforgemc.EnderForgeMC.svg
 
-convert polymc_128.png polymc_64.png polymc_48.png polymc_32.png polymc_24.png polymc_16.png polymc.ico
+convert enderforgemc_128.png enderforgemc_64.png enderforgemc_48.png enderforgemc_32.png enderforgemc_24.png enderforgemc_16.png enderforgemc.ico
 
-rm -f polymc_*.png
+rm -f enderforgemc_*.png
 
-inkscape -w 1024 -h 1024 -o polymc_1024.png org.polymc.PolyMC.bigsur.svg
+inkscape -w 1024 -h 1024 -o enderforgemc_1024.png org.enderforgemc.EnderForgeMC.bigsur.svg
 
-mkdir polymc.iconset
+mkdir enderforgemc.iconset
 
-sips -z 16 16     polymc_1024.png --out polymc.iconset/icon_16x16.png
-sips -z 32 32     polymc_1024.png --out polymc.iconset/icon_16x16@2x.png
-sips -z 32 32     polymc_1024.png --out polymc.iconset/icon_32x32.png
-sips -z 64 64     polymc_1024.png --out polymc.iconset/icon_32x32@2x.png
-sips -z 128 128   polymc_1024.png --out polymc.iconset/icon_128x128.png
-sips -z 256 256   polymc_1024.png --out polymc.iconset/icon_128x128@2x.png
-sips -z 256 256   polymc_1024.png --out polymc.iconset/icon_256x256.png
-sips -z 512 512   polymc_1024.png --out polymc.iconset/icon_256x256@2x.png
-sips -z 512 512   polymc_1024.png --out polymc.iconset/icon_512x512.png
-cp polymc_1024.png polymc.iconset/icon_512x512@2x.png
+sips -z 16 16     enderforgemc_1024.png --out enderforgemc.iconset/icon_16x16.png
+sips -z 32 32     enderforgemc_1024.png --out enderforgemc.iconset/icon_16x16@2x.png
+sips -z 32 32     enderforgemc_1024.png --out enderforgemc.iconset/icon_32x32.png
+sips -z 64 64     enderforgemc_1024.png --out enderforgemc.iconset/icon_32x32@2x.png
+sips -z 128 128   enderforgemc_1024.png --out enderforgemc.iconset/icon_128x128.png
+sips -z 256 256   enderforgemc_1024.png --out enderforgemc.iconset/icon_128x128@2x.png
+sips -z 256 256   enderforgemc_1024.png --out enderforgemc.iconset/icon_256x256.png
+sips -z 512 512   enderforgemc_1024.png --out enderforgemc.iconset/icon_256x256@2x.png
+sips -z 512 512   enderforgemc_1024.png --out enderforgemc.iconset/icon_512x512.png
+cp enderforgemc_1024.png enderforgemc.iconset/icon_512x512@2x.png
 
-iconutil -c icns polymc.iconset
+iconutil -c icns enderforgemc.iconset
 
-rm -f polymc_*.png
-rm -rf polymc.iconset
+rm -f enderforgemc_*.png
+rm -rf enderforgemc.iconset
 
 for dir in ../launcher/resources/*/scalable
 do
-    cp -v org.polymc.PolyMC.svg $dir/launcher.svg
+    cp -v org.enderforgemc.EnderForgeMC.svg $dir/launcher.svg
 done
