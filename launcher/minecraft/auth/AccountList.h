@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-3.0-only
 /*
- *  PolyMC - Minecraft Launcher
- *  Copyright (C) 2022 Sefa Eyeoglu <contact@scrumplex.net>
+ *  EnderForgeMC - Minecraft Launcher
+ *  Copyright (C) 2024 Abhinav VS
  *
  *  This program is free software: you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
@@ -44,7 +44,7 @@
 
 /*!
  * List of available Mojang accounts.
- * This should be loaded in the background by PolyMC on startup.
+ * This should be loaded in the background by EnderForgeMC on startup.
  */
 class AccountList : public QAbstractListModel
 {
