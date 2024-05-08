@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-3.0-only
 /*
- *  PolyMC - Minecraft Launcher
- *  Copyright (C) 2022 Sefa Eyeoglu <contact@scrumplex.net>
+ *  EnderForgeMC - Minecraft Launcher
+ *  Copyright (C) 2024 Abhinav VS
  *
  *  This program is free software: you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
@@ -174,7 +174,7 @@ JavaInstallPtr JavaUtils::GetDefaultJava()
 
 QStringList addJavasFromEnv(QList<QString> javas)
 {
-    auto env = qEnvironmentVariable("POLYMC_JAVA_PATHS");
+    auto env = qEnvironmentVariable("ENDERFORGEMC_JAVA_PATHS");
 #if defined(Q_OS_WIN32)
     QList<QString> javaPaths = env.replace("\\", "/").split(QLatin1String(";"));
     
@@ -441,7 +441,7 @@ QList<QString> JavaUtils::FindJavaPaths()
     scanJavaDir("/usr/lib/jvm");
     scanJavaDir("/usr/lib64/jvm");
     scanJavaDir("/usr/lib32/jvm");
-    // javas stored in PolyMC's folder
+    // javas stored in EnderForgeMC's folder
     scanJavaDir("java");
     // manually installed JDKs in /opt
     scanJavaDir("/opt/jdk");
