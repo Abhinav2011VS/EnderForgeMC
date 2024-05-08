@@ -1,4 +1,4 @@
-/* Copyright 2012-2021 MultiMC Contributors
+/* Copyright 2024 Abhinav VS
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -13,12 +13,12 @@
  * limitations under the License.
  */
 
-package org.polymc.impl;
+package org.enderforgemc.impl;
 
-import org.polymc.Launcher;
-import org.polymc.applet.LegacyFrame;
-import org.polymc.utils.Parameters;
-import org.polymc.utils.Utils;
+import org.enderforgemc.Launcher;
+import org.enderforgemc.applet.LegacyFrame;
+import org.enderforgemc.utils.Parameters;
+import org.enderforgemc.utils.Utils;
 
 import java.applet.Applet;
 import java.io.File;

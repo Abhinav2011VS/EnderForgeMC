@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-3.0-only
 /*
- *  PolyMC - Minecraft Launcher
- *  Copyright (C) 2022 icelimetea, <fr3shtea@outlook.com>
+ *  EnderForgeMC - Minecraft Launcher
+ *  Copyright (C) 2024 Abhinav VS
  *
  *  This program is free software: you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
@@ -33,10 +33,10 @@
  *  along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-package org.polymc;
+package org.enderforgemc;
 
-import org.polymc.impl.OneSixLauncher;
-import org.polymc.utils.Parameters;
+import org.enderforgemc.impl.OneSixLauncher;
+import org.enderforgemc.utils.Parameters;
 
 import java.util.HashMap;
 import java.util.Map;

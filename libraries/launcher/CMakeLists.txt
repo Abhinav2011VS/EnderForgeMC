@@ -3,19 +3,19 @@ project(launcher Java)
 find_package(Java 1.8 REQUIRED COMPONENTS Development)
 
 include(UseJava)
-set(CMAKE_JAVA_JAR_ENTRY_POINT org.polymc.EntryPoint)
+set(CMAKE_JAVA_JAR_ENTRY_POINT org.enderforgemc.EntryPoint)
 set(CMAKE_JAVA_COMPILE_FLAGS -target 8 -source 8 -Xlint:deprecation -Xlint:unchecked)
 
 set(SRC
-    org/polymc/EntryPoint.java
-    org/polymc/Launcher.java
-    org/polymc/LauncherFactory.java
-    org/polymc/impl/OneSixLauncher.java
-    org/polymc/applet/LegacyFrame.java
-    org/polymc/exception/ParameterNotFoundException.java
-    org/polymc/exception/ParseException.java
-    org/polymc/utils/Parameters.java
-    org/polymc/utils/Utils.java
+    org/enderforgemc/EntryPoint.java
+    org/enderforgemc/Launcher.java
+    org/enderforgemc/LauncherFactory.java
+    org/enderforgemc/impl/OneSixLauncher.java
+    org/enderforgemc/applet/LegacyFrame.java
+    org/enderforgemc/exception/ParameterNotFoundException.java
+    org/enderforgemc/exception/ParseException.java
+    org/enderforgemc/utils/Parameters.java
+    org/enderforgemc/utils/Utils.java
     net/minecraft/Launcher.java
 )
 add_jar(NewLaunch ${SRC})
