@@ -1,4 +1,4 @@
-/* Copyright 2013-2021 MultiMC Contributors
+/* Copyright 2024 Abhinav VS
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -27,7 +27,7 @@ enum IconType : unsigned
     ToBeDeleted
 };
 
-struct MMCImage
+struct EFMCImage
 {
     QIcon icon;
     QString key;
@@ -38,11 +38,11 @@ struct MMCImage
     }
 };
 
-struct MMCIcon
+struct EFMCIcon
 {
     QString m_key;
     QString m_name;
-    MMCImage m_images[ICONS_TOTAL];
+    EFMCImage m_images[ICONS_TOTAL];
     IconType m_current_type = ToBeDeleted;
 
     IconType type() const;
